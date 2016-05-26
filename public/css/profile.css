@@ -1,0 +1,74 @@
+/*Header*/
+
+#profile-header {
+  height : 190px;
+}
+
+#header {
+  margin-top     : -5px;
+  margin-bottom  : 17px;
+  color          : #EEE;
+  font-size      : 20px;
+  letter-spacing : 1px;
+}
+
+#update-profile-button {
+  background-image : url(../icons//ic_update_white_48dp_1x.png);
+}
+
+#delete-profile-button {
+  opacity          : 0;
+  background-image : url(../icons/ic_delete_white_24dp_2x.png);
+  background-color : #232934;
+}
+/*Profile info*/
+
+.headline {
+  width          : 100%;
+  margin-top     : 5%;
+  color          : #232934;
+  text-transform : uppercase;
+  font-size      : 40px;
+  font-weight    : 300;
+  letter-spacing : 4px;
+  cursor         : default;
+}
+
+.profile-info {
+  z-index : 1 !important;
+}
+
+.profile-info .headline {
+  margin-top : 30px;
+  font-size  : 35px;
+}
+
+.profile-info .data-holder {
+  margin-top : 20px;
+}
+
+.data-holder .input-layout {
+  margin-top : 50px !important;
+}
+
+.profile-info #expiration-date-field {
+  margin-top : -40px !important;
+}
+
+/*Alert message*/
+
+#delete-message {
+  height     : 310px;
+  margin-top : -12% !important;
+}
+
+#delete-message .input-layout {
+  width       : 70%;
+  margin-top  : 60px;
+  margin-left : 15%;
+}
+
+#delete-message .button,
+#delete-message .discard {
+  margin-top : 25px;
+}

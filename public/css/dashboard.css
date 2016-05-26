@@ -1,0 +1,444 @@
+/*Making the page not scrollbal*/
+
+body {
+  overflow-y : hidden;
+}
+
+/*When a table has a lot of rows then the pane will activate scolling*/
+
+.tab-pane {
+  height     : 76%;
+  overflow-y : auto !important;
+}
+
+/*Forcing hiding scrollbar in table pane*/
+
+#tables {
+  overflow-y : hidden !important;
+}
+
+/*
+  Reservation pane
+  - Floating buttons
+  - Reservation card pop-up
+  - Reservation cancel message
+  - Reservation cancel message > cancel button
+  - Reservation card > buttons
+*/
+
+/*Changing background of the button*/
+
+#add-account-button,
+#make-reservation-button {
+  background-image : url(../icons/ic_add_white_48dp_1x.png);
+}
+
+#make-delivery-button {
+  background-image : url(../icons/ic_restaurant_menu_white_48dp_1x.png);
+}
+
+#Historybo,
+#Historybot {
+  display  : block;
+  position : absolute;
+  top      : 85%;
+}
+
+/*Floating card height, position and enabling scrolling*/
+
+#reservation-card {
+  height     : 590px;
+  overflow-y : scroll;
+}
+
+#reservation-cancel-message {
+  position : absolute;
+  top: 180px;
+}
+
+/*Changing the position of the cancel button*/
+
+#cancel-confirm {
+  height : 200px;
+}
+
+/*Update, delete and confrim buttons in reservation card*/
+
+#delete,
+#deleteAccount,
+#update,
+#updateAccount {
+  width : 30%;
+}
+
+#update,
+#updateAccount {
+  margin-left : 17.5% !important;
+}
+
+#delete,
+#deleteAccount {
+  margin-left      : 52.5% !important;
+  border-color     : #232934 !important;
+  background-color : #232934 !important;
+}
+
+#confirm,
+#confirmAccount {
+  display : none;
+}
+
+/*
+  Report pane
+  - Headline
+*/
+
+#headline {
+  width          : 100%;
+  margin-top     : 5%;
+  padding-left   : 9%;
+  color          : #232934;
+  text-transform : uppercase;
+  font-size      : 40px;
+  font-weight    : 300;
+  letter-spacing : 4px;
+  cursor         : default;
+}
+
+.report-generator {
+  padding-left : 9%;
+}
+
+.report-generator label {
+  font-size   : 20px;
+  font-weight : 300;
+}
+
+/*Empty messages*/
+
+#empty-account-message,
+#empty-invoice-message,
+#empty-reservation-message {
+  display          : none;
+  margin-top       : 200px;
+  background-color : transparent !important;
+  text-transform   : uppercase;
+  font-weight      : 300;
+  cursor           : default;
+}
+
+/*Controlling tables view size*/
+
+#user-view {
+  position      : relative;
+  width         : 80%;
+  height        : 300px;
+  margin-top    : 5%;
+  margin-bottom : 2%;
+  margin-left   : 10%;
+}
+
+/*
+  Tables pane
+  - Table view (Table div)
+  - Table info (Table card)
+  - Table box
+  - Table info > label
+  - New Table
+  - Table control buttons
+*/
+
+.tables-view {
+  position   : relative;
+  width      : 90%;
+  height     : 400px;
+  margin     : 5%;
+  margin-top : 5px;
+  overflow   : hidden;
+}
+
+.table-info {
+  position         : absolute !important;
+  width            : 45px;
+  height           : 45px;
+  overflow         : hidden;
+  border-radius    : 30px;
+  background-color : white;
+  transition       : width 0.8s;
+}
+
+.existing-table:hover {
+  width  : 100px;
+  height : 45px;
+}
+
+.table-box {
+  display : none;
+}
+
+.table-box + label {
+  display             : inline-block;
+  position            : relative;
+  width               : 25px;
+  height              : 25px;
+  margin-top          : 8px;
+  margin-left         : 10px;
+  padding             : 0 0 0 0px;
+  background          : url(../icons/table-normal.png) no-repeat;
+  background-size     : cover;
+  -webkit-user-select : none;
+  cursor              : pointer;
+}
+
+.table-box:checked + label {
+  display             : inline-block;
+  width               : 25px;
+  height              : 25px;
+  padding             : 0 0 0 0px;
+  background          : url(../icons/table-selected.png) no-repeat;
+  background-size     : cover;
+  -webkit-user-select : none;
+  cursor              : pointer;
+}
+
+.info {
+  opacity          : 0;
+  transition       : opacity 0.3s ease-in-out;
+  transition-delay : 0.5s !important;
+}
+
+.existing-table:hover .info {
+  display     : inline;
+  position    : relative;
+  top         : -3px !important;
+  margin-left : 5px;
+  opacity     : 1;
+  cursor      : pointer;
+}
+
+.info label {
+  opacity : 0;
+}
+
+.existing-table:hover .info label {
+  opacity             : 1;
+  font-size           : 12px;
+  font-weight         : 400;
+  line-height         : 14px;
+  -webkit-user-select : none;
+  cursor              : pointer;
+}
+
+.unaviable-table {
+  background-color : #B71C1C !important;
+}
+
+#user-view .table-info {
+  background-color : #4CAF50;
+}
+
+#user-view .table-box:checked + label {
+  display             : inline-block;
+  width               : 25px;
+  height              : 25px;
+  padding             : 0 0 0 0px;
+  background          : url(../icons/table-white.png) no-repeat;
+  background-size     : cover;
+  -webkit-user-select : none;
+  cursor              : pointer;
+}
+
+#user-view .table-info label,
+.unaviable-table .info label {
+  color : white;
+}
+
+.tables-buttons {
+  position     : absolute !important;
+  top          : 90% !important;
+  width        : auto !important;
+  margin-right : 5% !important;
+}
+
+/*Table control buttons*/
+
+#add-table-button,
+#add-user-type-button {
+  left : 35% !important;
+}
+
+#update-table-button,
+#update-user-type-button {
+  left : 45% !important;
+}
+
+#delete-table-button,
+#delete-user-type-button {
+  left             : 56.8% !important;
+  border-color     : #232934 !important;
+  background-color : #232934 !important;
+}
+
+#save-table-button {
+  display : none;
+  left    : 60% !important;
+}
+
+#save-user-type-button {
+  display : none;
+  left    : 45% !important;
+}
+
+#save-table-button:disabled,
+#update-user-type-button:disabled,
+#delete-user-type-button:disabled {
+  background-color: grey !important;
+  border-color: grey !important;
+  cursor: default;
+}
+
+#tables_form {
+  display  : none;
+  position : absolute;
+  top      : 85%;
+  left     : 30%;
+  width    : 30%;
+}
+
+/*
+  When a new table is creadted it will have a centered position and deffierend
+  background color
+*/
+
+#newTable {
+  top              : 10%;
+  left             : 20%;
+  background-color : #009688;
+  cursor           : default;
+}
+
+/*User role pane*/
+
+#accounts-type-card {
+  height     : 590px;
+  overflow-y : auto;
+}
+
+/*Generate report pane*/
+
+.data-block {
+  height       : 100px;
+  margin-right : 50px;
+}
+
+.data-block .head-text {
+  color       : #FF0053;
+  font-size   : 25px;
+  font-weight : 400;
+}
+
+.data-block .secondary-text {
+  font-size   : 30px;
+  font-weight : 300;
+}
+
+.userTypeSelector {
+  color            : black;
+  border           : 0;
+  border           : none !important;
+  background-color : transparent;
+  outline          : none;
+  box-shadow       : none;
+  text-align       : center;
+  font-weight      : 400;
+  transition       : all 0.4s ease-in-out;
+}
+
+.typeView {
+  -moz-appearance    : none;
+  -webkit-appearance : none;
+  appearance         : none;
+  pointer-events     : none;
+  cursor             : default;
+}
+
+.userTypeText {
+  color            : #1E2431;
+  border           : 0;
+  background-color : transparent;
+  box-shadow       : none;
+  transition       : all 0.4s ease-in-out;
+  outline: none;
+  text-align: center;
+  width: 50%;
+}
+
+.edit .userTypeText {
+  color               : #1E2431;
+  border-bottom    : 1px solid black;
+  outline             : 0;
+  text-transform      : none;
+  font-size           : 18px;
+}
+
+.edit .userTypeText:focus {
+  border-bottom: 1px solid #FF0053;
+}
+
+/*
+  Food Orders
+*/
+#invoice-card {
+  height: 590px;
+  margin-top: -130px;
+}
+
+/*
+    invoice card
+*/
+#invoice-card {
+    height: 590px;
+    overflow: hidden;
+    top: 150px !important;
+}
+
+#items-div {
+    height: 390px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 30px;
+    margin-bottom: -20px;
+    overflow-y: auto;
+}
+
+#items-table {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#items-table th {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#items-table #name {
+    width: 250px;
+    text-align: left;
+}
+
+#items-table #amount {
+    width: 200px;
+}
+
+#items-table #total {
+    width: 150px;
+}
+
+#items-table td {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}

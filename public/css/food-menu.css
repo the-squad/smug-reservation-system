@@ -1,0 +1,443 @@
+body {
+  overflow-y: hidden;
+}
+
+.tab-content {
+  height: 440px;
+  overflow-y: scroll;
+}
+
+.tab-content::-webkit-scrollbar {
+  width : 8px;
+}
+
+.tab-content::-webkit-scrollbar-track {
+  background : transparent;
+}
+
+.tab-content::-webkit-scrollbar-thumb {
+  background : gray;
+}
+
+#food-menu-header {
+  height : 190px;
+}
+
+.headline {
+  width          : 100%;
+  margin-top     : 5%;
+  color          : #232934;
+  text-transform : uppercase;
+  font-size      : 40px;
+  font-weight    : 300;
+  letter-spacing : 4px;
+  cursor         : default;
+}
+
+#header {
+  margin-top     : -5px;
+  margin-bottom  : 17px;
+  color          : #EEE;
+  font-size      : 20px;
+  letter-spacing : 1px;
+}
+
+.search {
+  height        : 40px;
+  margin-top    : 13px;
+  border-radius : 2px;
+  background    : rgba(255, 255, 255, .15);
+}
+
+.search:hover,
+.search:focus {
+  background : rgba(255, 255, 255, .25);
+  outline    : 1px solid transparent;
+}
+
+.search .icon {
+  margin-top  : 8px;
+  margin-left : 10px;
+  padding-top : 0px;
+  color       : white;
+  font-size   : 20px;
+}
+
+.search input {
+  position         : absolute;
+  top              : 0px;
+  width            : 92%;
+  height           : 100%;
+  margin-left      : 15px;
+  color            : white;
+  border           : none;
+  background-color : transparent;
+  outline          : none;
+  font-size        : 15px;
+}
+
+/*Food card*/
+
+.food-card {
+  height           : 250px;
+  margin-top       : 2%;
+  padding-right    : 0px;
+  padding-left     : 0px;
+  margin-bottom: 20px;
+  border-radius    : 2px;
+  background-color : white;
+  box-shadow       : 0 0 4px rgba(0,0,0,.14),
+                     0 4px 8px rgba(0,0,0,.28);
+  transition       : .2s all ease-in-out;
+  cursor           : pointer;
+}
+
+.food-card:hover {
+  filter     : brightness(103%);
+  box-shadow : 0 0 6px rgba(0,0,0,.16),
+               0 6px 12px rgba(0,0,0,.32) !important;
+}
+
+.food-card .image {
+  width            : 70%;
+  height           : 100%;
+  float            : right;
+  background-size  : cover;
+}
+
+.food-card .shape {
+  z-index       : 2;
+  width         : 60%;
+  float         : left;
+  margin-top    : -250px;
+  padding-left  : 30px;
+  border-right  : 70px solid transparent;
+  border-bottom : 250px solid white;
+}
+
+.food-card .shape>.name {
+  position   : absolute;
+  margin-top : 50px;
+  font-size  : 25px;
+  cursor     : default;
+}
+
+.food-card .shape .description {
+  position     : absolute;
+  width        : 40%;
+  margin-top   : 85px;
+  margin-left  : 1px;
+  overflow     : hidden;
+  font-size    : 10px;
+  font-weight  : 500;
+  break-before : auto;
+  cursor       : default;
+}
+
+.food-card .shape .stars {
+  position : absolute;
+}
+
+.stars {
+  display  : inline;
+  position : relative;
+  top      : 152px;
+  width    : 30%;
+  cursor   : default;
+}
+
+.food-card .shape .star {
+  width     : 20px;
+  color     : #FFAB00;
+  font-size : 16px;
+  cursor    : pointer;
+}
+
+.food-card .price {
+  position    : absolute;
+  margin-top  : 165px ;
+  margin-left : 30px !important;
+  color       : #FF0053;
+}
+
+.price .number {
+  font-size   : 45px;
+  font-weight : 500;
+}
+
+.price .currency {
+  font-size   : 10px;
+  font-weight : 400;
+}
+
+/*Floating button*/
+
+#make-order-button {
+  background-image : url(../icons/ic_shopping_cart_white_24dp_2x.png);
+  display: none;
+}
+
+#add-food-item {
+  background-image : url(../icons/ic_add_white_48dp_1x.png);
+}
+
+#items-number {
+  position         : relative;
+  width            : 22px;
+  height           : 22px;
+  float            : right;
+  margin-top       : -5px;
+  margin-right     : -5px;
+  padding-top      : 3.5px;
+  padding-left     : 7.5px;
+  color            : white;
+  border-radius    : 100%;
+  background-color : #232934;
+  font-size        : 10px;
+}
+
+/*Food item card*/
+
+#food-item-card {
+  height     : 590px;
+  margin-top : -170px !important;
+  overflow-y: auto;
+}
+
+.food-picture {
+  width                   : 100%;
+  height                  : 200px;
+  border-top-left-radius  : 5px;
+  border-top-right-radius : 5px;
+  background-position     : center;
+  background-size         : cover;
+  padding: 0px !important;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.food-picture label {
+    font-size: 40px;
+    color: white;
+    z-index    : 122;
+    width      : 100%;
+    height     : 100%;
+    background : rgba(0, 0, 0, .8);
+    display: block;
+    padding-left: 45%;
+    padding-top: 80px;
+    top: -25px !important;
+    cursor: pointer;
+}
+
+.food-picture label:hover {
+    background : rgba(0, 0, 0, 0.9);
+}
+
+.view label{
+    display: none;
+}
+
+.view input {
+    text-align: center;
+}
+
+#food-item-card .close {
+    color: white;
+    box-shadow: none !important;
+    opacity: 0.5;
+    z-index: 9999;
+}
+
+#food-item-card .close:hover {
+    opacity: 0.8;
+}
+
+.view #name-text {
+    text-align: center;
+    font-size: 35px !important;
+    margin-top: -25px !important;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.view #description-text {
+    height: 100px;
+    pointer-events: none;
+    border-bottom: 0px !important;
+    overflow: hidden;
+    resize: none;
+    text-align: center;
+    font-weight: 300;
+    margin-top: -35px;
+}
+
+.edit #description-text {
+    overflow: hidden;
+    resize: none;
+    height: 120px;
+}
+
+#food-item-card #stars-div {
+    position: relative !important;
+    margin-top: -10px !important;
+    display: block;
+    top: 0px !important;
+    width: 20%;
+    text-align: center;
+    margin-left: 40%;
+}
+
+#food-item-card #stars-div {
+    color: #FFAB00;
+    font-size: 20px;
+}
+
+#food-item-card #amount,
+#food-item-card #priceDiv {
+    width: 9%;
+}
+
+#food-item-card #amount {
+    margin-left: 40%;
+}
+
+#food-item-card #priceDiv {
+    width: 15%;
+    margin-top: -65px;
+    margin-left: 50%;
+}
+
+.view .currency {
+    position: relative;
+    float: right;
+    margin-top: -15px;
+    margin-right: 3px;
+}
+
+.edit .currency {
+    display: none;
+}
+
+.view #price-text {
+    font-size   : 45px;
+    font-weight : 500;
+    color       : #FF0053;
+}
+
+#food-item-card #amount input {
+    text-align: center;
+}
+
+#order:disabled {
+    background-color: grey !important;
+    border-color: grey !important;
+    cursor: default;
+}
+
+/*Update, delete and confrim buttons in reservation card*/
+
+#delete,
+#update {
+  width : 30%;
+}
+
+#update {
+  margin-left : 17.5% !important;
+}
+
+#delete {
+  margin-left      : 52.5% !important;
+  border-color     : #232934 !important;
+  background-color : #232934 !important;
+}
+
+#confirm {
+    display: none;
+}
+
+#order:disabled:hover {
+    box-shadow: none !important;
+}
+
+#image-picker {
+    display: none;
+}
+
+/*
+    invoice card
+*/
+#invoice-card {
+    height: 590px;
+    overflow: auto;
+    top: 150px !important;
+}
+
+#items-div {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    overflow-y: auto;
+}
+
+#items-table {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#items-table th {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#items-table #name {
+    width: 250px;
+    text-align: left;
+}
+
+#items-table #amount {
+    width: 200px;
+}
+
+#items-table #total {
+    width: 150px;
+}
+
+#items-table #delete-row {
+    width: 80px;
+}
+
+.delete-item-icon {
+    font-weight: 200 !important;
+    cursor: pointer;
+}
+
+#items-table td {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+#items-div::-webkit-scrollbar {
+  width : 5px;
+}
+
+#items-div::-webkit-scrollbar-track {
+  background : transparent;
+}
+
+#items-div::-webkit-scrollbar-thumb {
+  border-radius : 20px;
+  background    : #FF0053;
+}

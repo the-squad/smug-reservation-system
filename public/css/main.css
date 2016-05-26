@@ -1,0 +1,427 @@
+* {
+  margin-top  : 0;
+  font-family : open sans;
+}
+
+body::-webkit-scrollbar {
+  width : 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background : transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background    : gray;
+}
+
+.floating-card::-webkit-scrollbar {
+  width : 5px;
+}
+
+.floating-card::-webkit-scrollbar-track {
+  background : transparent;
+}
+
+.floating-card::-webkit-scrollbar-thumb {
+  border-radius : 20px;
+  background    : grey;
+}
+
+.tab-pane::-webkit-scrollbar {
+  width : 8px;
+}
+
+.tab-pane::-webkit-scrollbar-track {
+  background : transparent;
+}
+
+.tab-pane::-webkit-scrollbar-thumb {
+  background : gray;
+}
+
+.contact-us-section,
+.food-menu-section,
+.home-section,
+.reservation-section,
+html {
+  min-width : 100%;
+  height    : 100%;
+  margin    : auto;
+  padding   : 0px !important;
+}
+
+.logo {
+  width      : 80px;
+  float      : left;
+  margin-top : 10px;
+}
+
+body {
+  width            : 100%;
+  overflow-x       : hidden;
+  background-color : #EEEEEE;
+}
+
+/*Forget password page starts*/
+
+#forget-password {
+  display    : block;
+  height     : 330px;
+  margin-top : 10%;
+}
+
+#forget-password h2 {
+  color : #232934;
+}
+
+#forget-password .input-layout {
+  margin-top : 80px;
+}
+
+.background {
+  z-index    : 1;
+  display    : none;
+  position   : fixed;
+  width      : 100%;
+  height     : 150%;
+  background : rgba(0, 0, 0, .8);
+}
+
+/*Button general layout*/
+
+.filled,
+.outline {
+  position         : absolute;
+  padding          : 10px 25px;
+  border-color     : #FF0053 !important;
+  border-width     : 3px;
+  border-style     : solid;
+  background-color : transparent;
+  outline          : none;
+  text-transform   : uppercase;
+  font-family      : 17px;
+  font-weight      : 600;
+  transition       : 0.3s ease all;
+}
+
+.filled:hover,
+.outline:hover {
+  transition : 0.3s ease all;
+  cursor     : pointer;
+}
+
+.outline {
+  color            : #FF0053 !important;
+  background-color : transparent;
+}
+
+.outline:hover {
+  color            : white !important;
+  background-color : #FF0053 !important;
+}
+
+.filled {
+  color            : white;
+  border-radius    : 4px;
+  background-color : #FF0053 !important;
+}
+
+.filled:hover {
+  box-shadow : 2px 2px 5px gray;
+}
+
+/*Floating card*/
+
+.floating-card {
+  z-index          : 2;
+  display          : none;
+  position         : fixed;
+  margin-top       : -130px !important;
+  border-radius    : 5px;
+  background-color : white;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  transition: 0.7s ease all;
+}
+
+.floating-card h2 {
+  margin-top     : 50px;
+  text-transform : uppercase;
+  font-size      : 35px;
+  font-weight    : 300;
+  letter-spacing : 1px;
+  cursor         : default !important;
+}
+
+.input-layout,
+.radio-layout {
+  position    : relative;
+  width       : 80%;
+  margin-top  : 40px;
+  margin-left : 10%;
+  transition: 0.7s ease all;
+}
+
+.first-input {
+  margin-top : 60px;
+}
+
+.input-layout label,
+.radio-layout .head-text {
+  position       : absolute;
+  top            : -25px;
+  left           : 0;
+  color          : #b8b5bd;
+  font-size      : 18px;
+  font-weight    : 400;
+  letter-spacing : 1px;
+  transition     : .2s ease all;
+  pointer-events : none;
+}
+
+.input-layout input,
+.input-layout select,
+.input-layout textarea {
+  width            : 100%;
+  height           : 20px;
+  padding          : 20px 10px;
+  color            : #1E2431;
+  border           : 0;
+  border-bottom    : 1px solid #dadee6;
+  background-color : transparent;
+  box-shadow       : none;
+  font-size        : 18px;
+  font-weight      : 400;
+  transition       : all 0.4s ease-in-out;
+}
+
+/*Edit mode*/
+
+.edit input,
+.edit select {
+  border-bottom  : 1px solid #dadee6;
+  pointer-events : auto;
+}
+
+/*View mode*/
+
+.view-static input,
+.view input,
+.view select {
+  border-bottom  : 0px !important;
+  pointer-events : none;
+  cursor         : default;
+}
+
+.view select {
+  -moz-appearance    : none;
+  -webkit-appearance : none;
+  appearance         : none;
+}
+
+.input-layout select {
+  height  : 40px;
+  padding : 0px 0px;
+  outline : none;
+}
+
+.input-layout input:valid~label,
+.input-layout select:valid~label,
+.input-layout textarea:valid~label {
+  color          : #A2AABD;
+  opacity        : 1;
+  text-transform : uppercase;
+  font-size      : 12px;
+  font-weight    : 400;
+}
+
+.input-layout input:focus:not([readonly])~label,
+.input-layout select:focus:not([readonly])~label,
+.input-layout textarea:focus:not([readonly])~label {
+  color       : #FF0053;
+  font-weight : 400;
+}
+
+.input-layout input:active,
+.input-layout input:focus,
+.input-layout textarea:active,
+.input-layout textarea:focus {
+  padding-left        : 0;
+  color               : #1E2431;
+  border-bottom-color : #FF0053;
+  outline             : 0;
+  text-transform      : none;
+  font-size           : 18px;
+}
+
+.error-message {
+  display          : none;
+  position         : relative !important;
+  width            : 100% !important;
+  height           : 30px !important;
+  margin-top       : 30px !important;
+  margin-bottom    : -20 !important;
+  padding-top      : 5.5px !important;
+  color            : #a94442 !important;
+  border-color     : #ebccd1 !important;
+  border-radius    : 4px;
+  background-color : #f2dede !important;
+  text-align       : center;
+  text-transform   : capitalize !important;
+  font-size        : 13px !important;
+}
+
+.floating-card .action-button {
+  width         : 40%;
+  margin-top    : 30px;
+  margin-bottom : 40px;
+  margin-left   : 30%;
+}
+
+.floating-card .close {
+  position  : relative;
+  top       : 15px;
+  right     : 15px;
+  color     : inherit;
+  font-size : 25px;
+}
+
+.half-input,
+.half-input-up {
+  width : 37.5%;
+}
+
+.half-input-up {
+  margin-top  : -40px;
+  margin-left : 52.5%;
+}
+
+/*Alert messages*/
+
+.alert {
+  z-index : 9999 !important;
+}
+
+.alert-message {
+  height     : 270px;
+  margin-top : 5% !important;
+}
+
+.alert-message h2 {
+  width       : 80%;
+  margin-left : 10%;
+  font-size   : 25px !important;
+}
+
+.alert-message .button,
+.alert-message .discard {
+  width       : 200px;
+  margin-top  : 20px;
+  padding     : 10px 0px !important;
+  outline     : none !important;
+  font-size   : 15px !important;
+  font-weight : 300;
+  transition  : none;
+}
+
+.alert-message .discard {
+  color            : #ff0053;
+  border           : none !important;
+  background-color : transparent !important;
+  font-weight      : 600;
+}
+
+.alert-message .button:hover {
+  padding    : 11px 0px !important;
+  border     : 2px solid #232934 !important;
+  box-shadow : none;
+}
+
+.alert-message .discard:hover {
+  color      : #1e2431;
+  box-shadow : none;
+}
+
+/*Alert*/
+
+.alert {
+  display  : none;
+  position : fixed;
+  top      : 85%;
+}
+
+/*Floating button*/
+
+.floating-button {
+  position            : fixed;
+  top                 : 83%;
+  left                : 87%;
+  width               : 55px;
+  height              : 55px;
+  border-radius       : 100%;
+  background-color    : #ff0053;
+  background-repeat   : no-repeat;
+  background-position : center;
+  background-size     : 55%;
+  box-shadow          : 0 0 4px rgba(0,0,0,.14),
+                        0 4px 8px rgba(0,0,0,.28);
+  transition          : .2s all ease-in-out;
+  cursor              : pointer;
+}
+
+.floating-button:hover {
+  box-shadow : 0 0 6px rgba(0,0,0,.16),
+               0 6px 12px rgba(0,0,0,.32) !important;
+}
+
+.hover-div .floating-button {
+  position   : relative;
+  float      : right;
+  margin-top : 0px;
+}
+
+.hover-div .text {
+  display        : inline-block;
+  position       : relative;
+  max-width      : 200px;
+  float          : left;
+  margin-top     : 10px;
+  margin-right   : -45px;
+  padding        : 8px 10px;
+  color          : #ececec;
+  opacity        : 0;
+  overflow       : hidden;
+  border-radius  : 2px;
+  background     : rgba(70, 70, 70, .9);
+  box-shadow     : 0 1px 2px rgba(0, 0, 0, .15);
+  text-overflow  : ellipsis;
+  vertical-align : middle;
+  line-height    : 1em;
+  cursor         : default;
+}
+
+#delete .text {
+  margin-right : -41px !important;
+}
+
+.first-button {
+  position : fixed;
+  top      : 83%;
+  left     : 80%;
+}
+
+.second-button {
+  position : fixed;
+  top      : 72%;
+  left     : 80%;
+}
+
+.first-button .text {
+  transition : 0.3s ease-in-out;
+}
+
+.second-button-profile-button,
+.second-button .text {
+  transition : 0.5s ease-in-out;
+}

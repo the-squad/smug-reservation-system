@@ -1,0 +1,96 @@
+/*
+	Table Header background
+*/
+.table-header {
+  color            : white;
+  background-color : #2F404B !important;
+  text-transform   : uppercase;
+  font-size        : 12px;
+}
+
+/*
+	Table main css
+*/
+table {
+  border           : 0px !important;
+  background-color : transparent !important;
+  transition       : 3s ease;
+}
+
+/*
+	Table header text
+*/
+.table-header th {
+  padding-top    : 15px !important;
+  padding-bottom : 15px !important;
+  border         : 0px !important;
+  text-align     : center;
+  font-weight    : 400;
+  cursor         : default;
+}
+
+/*
+	Table row text
+*/
+.table-row td {
+  padding-top    : 10px !important;
+  padding-bottom : 10px !important;
+  color          : #232934;
+  text-align     : center;
+  font-size      : 15px;
+  font-weight    : 400;
+  cursor         : pointer;;
+}
+
+/*
+	Table row hover
+*/
+.table-row:hover {
+  background-color : #BDBDBD;
+}
+
+/*
+	Setting custom width for columns
+*/
+table #name {
+  width : 200px;
+}
+
+table #payment-method,
+table #phone-number,
+table #email {
+  width : 150px !important;
+}
+
+table #type {
+  width : 180px;
+}
+
+table #chairs-number,
+table #day,
+table #duration,
+table #hour {
+  width : 130px;
+}
+
+table .hidden {
+  display : none !important;
+}
+
+table #rate {
+    width: 150px;
+}
+
+table #opinion,
+table #cons,
+table #userType {
+    width: 200px;
+}
+
+table .table-row:hover .star {
+    color: #FFC400;
+}
+
+#table #money {
+    width: 600px;
+}

@@ -1,0 +1,496 @@
+/* Home section */
+
+.navbar {
+    border: none;
+    top: 120px;
+}
+
+.navbar-default {
+    background-color: transparent !important;
+}
+
+#index-page {
+    margin-top: -15px;
+}
+
+.container-fluid {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.navbar-toggle {
+    border: none;
+}
+
+#login-button {
+    text-decoration: none;
+    border: 2px solid;
+    transition: 0.3s ease all;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 8px 20px !important;
+    margin-top: 0px;
+    color: #FF0053 !important;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+
+#login-button:hover {
+    color: white !important;
+}
+
+.home-section a {
+    padding: 10px 15px !important;
+    color: #ff0053 !important;
+}
+
+.home-section {
+    background-image: url(../images/index-background.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-section .nav > li > a {
+    color: white !important;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: 0.3s ease all !important;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.home-section .nav > li > a:hover {
+    color: #ff0053 !important;
+}
+
+#welcome-text {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-top: 15%;
+    font-size: 50px;
+    cursor: default;
+}
+
+#welcome-paragraph {
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: default;
+}
+
+#sign-up-button,
+#food-menu-button {
+    color: white !important;
+    background-color: #ff0053;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 500 !important;
+}
+
+#sign-up-button {
+    margin-top: 30px;
+    padding: 15px !important;
+}
+
+#sign-up-button:hover {
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 12px !important;
+}
+
+
+/* Login card */
+
+#login-card {
+    height: 400px;
+    margin-top: 50px !important;
+}
+#forget-password {
+    color: #ff0053;
+    font-size: 17px;
+    margin-top: 80px;
+    text-transform: uppercase;
+}
+
+#forget-password:hover {
+    text-decoration: none;
+    color: #232934;
+}
+
+
+/* Sign up card */
+
+#sign-up-card {
+    position: absolute;
+    overflow-y: scroll;
+    height     : 590px;
+    margin-top: -50px !important;
+}
+
+#sign-up-card .action-button {
+    margin-bottom: 30px;
+}
+
+
+/* Reservaion section */
+
+.reservation-section {
+    background-image: url(../images/reservation-background.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.reservation-section #reservation-card {
+    display: inline;
+    position: relative;
+    margin-top: 0% !important;
+    height: 100%;
+    box-shadow: none;
+    overflow-y: scroll;
+}
+
+.reservation-section #reservation-card .close {
+    display: none !important;
+}
+
+#reservation-order-card-index-page .action-button:hover {
+    box-shadow: none !important;
+    border: 5px solid white !important;
+}
+
+
+/* Food menu section */
+
+.food-menu-section {
+    width: 100%;
+    position: relative;
+    background-color: white;
+}
+
+.headline {
+    margin-top: 5%;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-size: 40px;
+    color: #232934;
+    cursor: default;
+}
+
+#food-menu-button {
+    margin-top: 5%;
+    transition: 0.3s ease all;
+}
+
+#food-menu-button:hover {
+    text-decoration: none;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.food-menu-section .food-card {
+    margin-top: 2%;
+    height: 300px;
+    background-color: white;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 5px;
+    z-index: 2;
+    cursor: pointer;
+    margin-left: 5%;
+    padding: 0px !important;
+}
+
+.food-menu-section .food-card h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    color: white;
+    transition: 0.5s ease all;
+}
+
+#big-mac-card,
+#pizza-card,
+#chicken-macdo-card {
+    background-position: center;
+    background-size: cover;
+}
+
+#big-mac-card {
+    background-image: url(../images/Big-Mac.jpg);
+}
+
+#pizza-card {
+    background-image: url(../images/Pizza.jpg);
+}
+
+#chicken-macdo-card {
+    background-image: url(../images/Chicken-macdo.jpg);
+}
+
+#image-edit {
+    display: block;
+}
+
+.food-card .image-edit {
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, .5);
+}
+
+.food-menu-section .food-card p {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    position: absolute;
+    top: 45%;
+    height: 45%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.food-menu-section .food-card:hover h1 {
+    top: 15%;
+}
+
+.food-menu-section .food-card:hover p {
+    visibility: visible;
+    opacity: 1;
+}
+
+.first {
+    margin-left: 7.5%;
+    padding: 0px !important;
+}
+
+
+/* Contact us section */
+
+.contact-us .map {
+    height: 69%;
+    padding: 0px;
+    margin-top: 2.1%;
+}
+
+.contact-us-section {
+    background-color: #232934;
+}
+
+.contact-us-section .headline {
+    margin-top: 3.5%;
+    color: white;
+}
+
+.contact-us-section .email {
+    margin-top: 0%;
+    padding-top: 3%;
+}
+
+.email .first-input {
+    margin-top: 4%;
+}
+
+.email input,
+.email textarea {
+    color: white !important;
+}
+
+#message textarea {
+    outline: none;
+    overflow: hidden;
+    resize: none;
+    padding-left: 10px !important;
+    padding-bottom: 90px;
+}
+
+.contact-us-section .map {
+    margin-top: -300px;
+    height: 350px;
+    width: 600px;
+    border: 4px solid #ff0053;
+    padding: 0px !important;
+}
+
+.contact-us-section #send-email {
+    margin-top: 20px;
+    transition: none !important;
+}
+
+.contact-us-section #send-email:hover {
+    box-shadow: none !important;
+    border: 2px solid white !important;
+    padding: 11px;
+}
+
+.contact-us-section .info {
+    margin-top: 32%;
+    color: white;
+    cursor: default;
+}
+
+.contact-us-section .social-media {
+    margin-top: 0%;
+    font-size: 25px;
+}
+
+.contact-us-section a {
+    color: white !important;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.contact-us-section a:hover {
+    text-decoration: none !important;
+}
+
+.contact-us-section #facebook:hover {
+    color: #3e5b98;
+}
+
+.contact-us-section #twitter:hover {
+    color: #4da7de;
+}
+
+/*Controlling tables view size*/
+
+#user-view {
+  position    : relative;
+  width       : 80%;
+  height      : 300px;
+  margin-left : 10%;
+}
+
+/*
+  Tables pane
+  - Table view (Table div)
+  - Table info (Table card)
+  - Table box
+  - Table info > label
+  - New Table
+  - Table control buttons
+*/
+
+.tables-view {
+  position   : relative;
+  width      : 90%;
+  height     : 400px;
+  margin     : 5%;
+  margin-top : 5px;
+  overflow   : hidden;
+}
+
+.table-info {
+  position         : absolute !important;
+  top              : 10px;
+  left             : 10px;
+  width            : 45px;
+  height           : 45px;
+  overflow         : hidden;
+  border-radius    : 30px;
+  background-color : white;
+  transition       : width 0.8s;
+}
+
+.existing-table:hover {
+  width  : 100px;
+  height : 45px;
+}
+
+.table-box {
+  display : none;
+}
+
+.table-box + label {
+  display             : inline-block;
+  position            : relative;
+  width               : 25px;
+  height              : 25px;
+  margin-top          : 8px;
+  margin-left         : 10px;
+  padding             : 0 0 0 0px;
+  background          : url(../icons/table-normal.png) no-repeat;
+  background-size     : cover;
+  -webkit-user-select : none;
+  cursor              : pointer;
+}
+
+.table-box:checked + label {
+  display             : inline-block;
+  width               : 25px;
+  height              : 25px;
+  padding             : 0 0 0 0px;
+  background          : url(../icons/table-selected.png) no-repeat;
+  background-size     : cover;
+  -webkit-user-select : none;
+  cursor              : pointer;
+}
+
+.info {
+  opacity          : 0;
+  transition       : opacity 0.3s ease-in-out;
+  transition-delay : 0.5s !important;
+}
+
+.existing-table:hover .info {
+  display     : inline;
+  position    : relative;
+  top         : -3px !important;
+  margin-left : 5px;
+  opacity     : 1;
+  cursor      : pointer;
+}
+
+.info label {
+  opacity : 0;
+}
+
+.existing-table:hover .info label {
+  opacity             : 1;
+  font-size           : 12px;
+  font-weight         : 400;
+  line-height         : 14px;
+  -webkit-user-select : none;
+  cursor              : pointer;
+}
+
+.unaviable-table {
+  background-color : #B71C1C !important;
+}
+
+#user-view .table-info {
+  background-color : #4CAF50;
+}
+
+#user-view .table-box:checked + label {
+  display             : inline-block;
+  width               : 25px;
+  height              : 25px;
+  padding             : 0 0 0 0px;
+  background          : url(../icons/table-white.png) no-repeat;
+  background-size     : cover;
+  -webkit-user-select : none;
+  cursor              : pointer;
+}
+
+#user-view .table-info label,
+.unaviable-table .info label {
+  color : white;
+}
+
+.tables-buttons {
+  position     : absolute !important;
+  top          : 90% !important;
+  width        : auto !important;
+  margin-right : 5% !important;
+}
