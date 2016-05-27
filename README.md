@@ -17,17 +17,20 @@ Muhammad Tarek
 
 Muhammad Kamal
 - Email: medoforever271@gmail.com
-- [Facebook](https://www.facebook.com/mhmd.bashae1?__mref=message_bubble)
+- [Facebook](https://www.facebook.com/mhmd.bashae1)
 - [LinkedIn](https://eg.linkedin.com/in/mohamedkamal9)
 
 Muhammad Al-Rifai
 - Email: fcih.mohammed@gmail.com
+- [Facebook](https://www.facebook.com/Mohammed.Alrfaae.II)
 
 Mustafa Magdy
 - Email: Mostafa.Magdy9696@gmail.com
 
 Muhammad Khairala
 - Email: khairala1996@gmail.com
+- [Facebook] (https://www.facebook.com/mohammed.khairala)
 
 Muhammad Ashraf
 - Email: mohamed.fcih2265@gmail.com
+- [Facebook] (https://www.facebook.com/mohamed.ashraf2265?fref=ufi)
