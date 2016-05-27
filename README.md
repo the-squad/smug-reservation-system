@@ -26,6 +26,8 @@ Muhammad Al-Rifai
 
 Mustafa Magdy
 - Email: Mostafa.Magdy9696@gmail.com
+- [Facebook](https://www.facebook.com/mostafa.magdy.9022662?hc_location=ufi)
+- [LinkedIn](https://www.linkedin.com/in/mostafa-magdy-46a963ba?trk=nav_responsive_tab_profile)
 
 Muhammad Khairala
 - Email: khairala1996@gmail.com
