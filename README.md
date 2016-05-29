@@ -7,6 +7,8 @@ There is some stuff to care about:
 - There are a lot of functions that aren't completed yet, so if you finish it. You are more than welcome to share it with us
 - Most of the code isn't well formatted, we will work on it as soon as possible
 
+You can find the project on [Behance] (http://bit.ly/smugDesign)
+
 # This is our team:
 Muhammad Tarek 
 - Email: muhammadtarek96@gmail.com
