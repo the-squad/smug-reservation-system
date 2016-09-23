@@ -10,7 +10,7 @@ class Guest extends Human {
     */
     public function Regestration($Email , $Password , $firstname, $lastname,$address , $phonenumber) {
         $DB = Database::getObject();
-        $userid = mysqli_fetch_array($DB->get("user_types",["id"],"type","user"));
+        $userid = mysqli_fetch_array($DB->get("user_types",array("id"),"type","user"));
         $array = array("first_name" => $firstname, "last_name" => $lastname, "email" => $Email, "phone_number" => $phonenumber, "user_type_id" => $userid[0]);
         if (Validation::checkEmail($Email) != "update") {
             $DB->add("user", $array);
